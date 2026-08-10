@@ -13,3 +13,4 @@ A simple and secure Python script to encrypt and decrypt secret messages using t
 3. Run the script using your terminal or an online compiler:
    ```bash
    python main.py
+ 
