@@ -1,16 +1,43 @@
-# Caesar Cipher Tool 🔒
+# Caesar Cipher Tool 🔐
 
-A simple and secure Python script to encrypt and decrypt secret messages using the classic **Caesar Cipher** algorithm. 
+A simple Python project I made to practice the basics of encryption and understand how the Caesar Cipher works.
 
-## Features ✨
-* **Encryption:** Shifts letters forward to secure your secret messages.
-* **Decryption:** Reverses the shift to reveal the original message.
-* **Smart Handling:** Automatically ignores spaces and special characters while preserving uppercase and lowercase letters.
+The program can encrypt and decrypt messages using a shift number that the user chooses.
 
-## How to Run 🚀
-1. Make sure you have Python installed on your computer.
-2. Download or copy the `main.py` code.
-3. Run the script using your terminal or an online compiler:
-   ```bash
-   python main.py
- 
+## What it does
+
+- Encrypts text using a Caesar Cipher
+- Decrypts encrypted text
+- Keeps uppercase and lowercase letters
+- Keeps spaces, numbers, and symbols unchanged
+
+## How to run
+
+1. Make sure Python is installed.
+2. Download or clone this repository.
+3. Open a terminal in the project folder.
+4. Run:
+
+```bash
+python main.py
+```
+
+## Example
+
+If the shift is `3`:
+
+```text
+Input:  Hello, World!
+Output: Khoor, Zruog!
+```
+
+To decrypt it, use the same shift:
+
+```text
+Input:  Khoor, Zruog!
+Output: Hello, World!
+```
+
+## Why I made this
+
+I wanted to practice Python and understand how simple encryption works. The Caesar Cipher is easy to break since there are only 25 possible shifts, so it shouldn't be used to protect real information.
