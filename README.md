@@ -1,22 +1,19 @@
 # Caesar Cipher Tool 🔐
 
-A simple Python project I made to practice the basics of encryption and understand how the Caesar Cipher works.
-
-The program can encrypt and decrypt messages using a shift number that the user chooses.
+A small Python project I made to practice encryption basics. You choose encrypt or decrypt, type a message, pick a shift number, and it gives you the result.
 
 ## What it does
 
-- Encrypts text using a Caesar Cipher
-- Decrypts encrypted text
-- Keeps uppercase and lowercase letters
-- Keeps spaces, numbers, and symbols unchanged
+- Encrypts a message by shifting each letter
+- Decrypts it back with the same shift
+- Keeps upper and lowercase letters as they are
+- Leaves spaces, numbers, and symbols unchanged
 
 ## How to run
 
-1. Make sure Python is installed.
-2. Download or clone this repository.
-3. Open a terminal in the project folder.
-4. Run:
+1. Install Python if you don't have it
+2. Download or clone this repo
+3. Open a terminal in the project folder and run:
 
 ```bash
 python main.py
@@ -24,20 +21,15 @@ python main.py
 
 ## Example
 
-If the shift is `3`:
-
 ```text
-Input:  Hello, World!
-Output: Khoor, Zruog!
+Encrypt or decrypt? (e/d): e
+Enter your message: Hello, World!
+Enter shift number (e.g., 3): 3
+Result: Khoor, Zruog!
 ```
 
-To decrypt it, use the same shift:
-
-```text
-Input:  Khoor, Zruog!
-Output: Hello, World!
-```
+To get the original back, choose `d` and use the same shift.
 
 ## Why I made this
 
-I wanted to practice Python and understand how simple encryption works. The Caesar Cipher is easy to break since there are only 25 possible shifts, so it shouldn't be used to protect real information.
+I wanted to practice Python and see how simple encryption works. The Caesar Cipher is easy to break since there are only 25 possible shifts, so don't use it for anything real.
