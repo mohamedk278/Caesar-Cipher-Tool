@@ -2,7 +2,7 @@ def caesar_cipher(text, shift, mode='encrypt'):
     result = ""
     if mode == 'decrypt':
         shift = -shift
-        
+
     for char in text:
         if char.isalpha():
             ascii_offset = ord('A') if char.isupper() else ord('a')
@@ -11,11 +11,13 @@ def caesar_cipher(text, shift, mode='encrypt'):
             result += char
     return result
 
-message = input("Enter your secret message: ")
+mode = input("Encrypt or decrypt? (e/d): ").lower()
+message = input("Enter your message: ")
 shift_key = int(input("Enter shift number (e.g., 3): "))
 
-encrypted = caesar_cipher(message, shift_key, 'encrypt')
-decrypted = caesar_cipher(encrypted, shift_key, 'decrypt')
-
-print(f"Encrypted: {encrypted}")
-print(f"Decrypted: {decrypted}")
+if mode == 'e':
+    print("Result:", caesar_cipher(message, shift_key, 'encrypt'))
+elif mode == 'd':
+    print("Result:", caesar_cipher(message, shift_key, 'decrypt'))
+else:
+    print("Please type e or d.")
